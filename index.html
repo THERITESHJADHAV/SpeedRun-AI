@@ -7,7 +7,8 @@
     
     <!-- SEO & Open Graph Meta Tags -->
     <title>Next-Gen AI Platform Speed Run</title>
-    <meta name="description" content="Experience the advanced AI-driven data automation platform. Fast, reliable, and built for modern teams." />
+    <meta name="description" content="Experience SpeedRun AI: the next-gen AI-driven data automation platform. Connect pipelines, transform datasets, and deploy complex neural workflows at terminal velocity." />
+    <link rel="canonical" href="https://speedrun-ai-platform.vercel.app/" />
     <meta name="keywords" content="AI, Data Automation, Speed Run, SaaS Platform" />
     <meta property="og:title" content="Next-Gen AI Platform Speed Run" />
     <meta property="og:description" content="Advanced AI-driven data automation platform. Built for terminal velocity." />
@@ -22,6 +23,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://speedrun-ai-platform.vercel.app/#organization",
+          "name": "SpeedRun AI",
+          "url": "https://speedrun-ai-platform.vercel.app/",
+          "logo": "https://speedrun-ai-platform.vercel.app/logo.png",
+          "description": "Next-Gen AI Platform Speed Run for Data Automation."
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://speedrun-ai-platform.vercel.app/#application",
+          "name": "SpeedRun AI Platform",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "All"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://speedrun-ai-platform.vercel.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does the engine isolate component state updates?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We employ a zero-dependency PubSub architecture combined with direct DOM node references. Updates target raw textContent values, completely bypassing the parent virtual DOM reconciliation process and ensuring zero global layout reflows."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there a limit to the active bento-node tracking matrix?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The tracking matrix scales dynamically. Because calculations utilize native CSS variables mapping coordinate boundaries directly to the GPU compositor layer, the node count is constrained only by VRAM limits rather than main-thread JS capacity."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-[#172B36] text-[#F1F6F4] font-sans antialiased selection:bg-[#FFC801] selection:text-[#172B36]">
     <div id="root"></div>
