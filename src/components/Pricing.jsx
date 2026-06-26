@@ -44,7 +44,14 @@ const PriceDisplay = ({ tier }) => {
       }
       
       const formattedPrice = Math.round(finalPrice).toLocaleString();
-      priceRef.current.textContent = `${config.symbol}${formattedPrice}`;
+      const newValue = `${config.symbol}${formattedPrice}`;
+      
+      // Strict Text Node Isolation: Mutate the leaf node directly without recreating it
+      if (priceRef.current.firstChild) {
+        priceRef.current.firstChild.nodeValue = newValue;
+      } else {
+        priceRef.current.textContent = newValue;
+      }
     };
 
     // Initialize text on mount
