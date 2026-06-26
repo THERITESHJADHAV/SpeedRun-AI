@@ -1,7 +1,7 @@
 # SpeedRun AI Platform
 
-![SpeedRun AI](https://speedrun-ai-platform.vercel.app/favicon.svg)
-
+![SpeedRun AI]([https://speedrunai.netlify.app/])
+![Video Demo]([https://drive.google.com/file/d/1ZBsV-nd99SsWQoczRqXuYApx31FbEUHQ/view?usp=drive_link])
 > **Experience Next-Gen AI Platform SpeedRun:** the ultimate AI-driven data automation system. Connect pipelines, transform datasets, and deploy intelligent agents in seconds.
 
 ## 🚀 Overview
