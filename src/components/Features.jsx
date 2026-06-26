@@ -43,11 +43,12 @@ export const Features = () => {
   }, []);
 
   return (
-    <section id="features" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-24">
-      <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-arctic mb-4">Architecture of Speed</h2>
-        <p className="text-mystic text-lg max-w-2xl">A cohesive toolset designed to remove bottlenecks from your data engineering lifecycle.</p>
-      </div>
+    <section id="features" className="py-24 px-6 md:px-12 bg-oceanic relative overflow-hidden border-t border-mystic/10">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16 reveal-on-scroll">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-arctic mb-4">Architecture of Speed</h2>
+          <p className="text-mystic text-lg max-w-2xl mx-auto">A cohesive toolset designed to remove bottlenecks from your data engineering lifecycle.</p>
+        </div>
 
       {isMobile ? (
         // Mobile Accordion View
@@ -112,7 +113,8 @@ export const Features = () => {
                     e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
                     e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
                   }}
-                  className={`mouse-glow relative group flex flex-col justify-between h-full p-8 rounded-2xl transition-all duration-200 ease-out cursor-default overflow-hidden
+                  style={{ transitionDelay: `${index * 150}ms` }}
+                  className={`mouse-glow reveal-on-scroll relative group flex flex-col justify-between h-full p-8 rounded-2xl transition-all duration-200 ease-out cursor-default overflow-hidden
                     bg-gradient-to-br from-[#114C5A]/50 to-[#172836] border hover:-translate-y-1 hover:shadow-lg hover:shadow-[#114C5A]/20
                     ${isActive ? 'border-forsythia/50 shadow-lg shadow-[#114C5A]/20 -translate-y-1' : 'border-transparent'}
                   `}
@@ -134,6 +136,7 @@ export const Features = () => {
           })}
         </div>
       )}
+      </div>
     </section>
   );
 };

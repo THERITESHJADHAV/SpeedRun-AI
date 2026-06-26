@@ -68,9 +68,10 @@ export const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="w-full max-w-7xl mx-auto px-6 md:px-12 py-24">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-arctic mb-6">Scale without friction</h2>
+    <section id="pricing" className="py-24 px-6 md:px-12 bg-oceanic relative overflow-hidden border-t border-mystic/10">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16 reveal-on-scroll">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-arctic mb-4">Transparent Scaling</h2>
         <p className="text-mystic text-lg max-w-2xl mx-auto">Predictable, matrix-driven pricing tailored for global teams.</p>
       </div>
 
@@ -104,8 +105,9 @@ export const Pricing = () => {
         {['Starter', 'Professional', 'Enterprise'].map((tier, index) => (
           <div 
             key={tier}
-            className={`mouse-glow relative rounded-2xl border p-8 flex flex-col justify-between transition-all duration-300 ease-out 
-              ${index === 1 
+            style={{ transitionDelay: `${index * 150}ms` }}
+            className={`mouse-glow reveal-on-scroll relative rounded-2xl border p-8 flex flex-col justify-between transition-all duration-300 ease-out 
+              ${index === 1  
                 ? 'bg-nocturnal border-forsythia/50 shadow-[0_0_30px_rgba(255,200,1,0.15)] -translate-y-2' 
                 : 'bg-oceanic border-mystic/20 hover:border-mystic/50 hover:-translate-y-1 hover:shadow-lg'
               }`}
@@ -155,6 +157,7 @@ export const Pricing = () => {
             </button>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
