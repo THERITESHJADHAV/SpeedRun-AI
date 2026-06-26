@@ -80,7 +80,7 @@ export const Pricing = () => {
           <span className="text-arctic font-medium">Monthly</span>
           <label className="relative inline-flex items-center cursor-pointer">
             {/* Uncontrolled input dispatching to external store */}
-            <input type="checkbox" className="sr-only peer" onChange={handleToggle} />
+            <input type="checkbox" className="sr-only peer" aria-label="Toggle Annual Billing" onChange={handleToggle} />
             <div className="w-11 h-6 bg-nocturnal rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-forsythia border border-mystic/20"></div>
           </label>
           <span className="text-arctic font-medium">Annually <span className="text-forsythia text-sm ml-1">(Save 20%)</span></span>
@@ -89,6 +89,7 @@ export const Pricing = () => {
         <div className="relative">
           {/* Uncontrolled select dispatching to external store */}
           <select 
+            aria-label="Select Currency"
             className="appearance-none bg-nocturnal border border-mystic/20 text-arctic py-2 pl-4 pr-10 rounded-md focus:outline-none focus:border-forsythia/50 transition-colors duration-200 cursor-pointer font-mono"
             onChange={handleCurrencyChange}
             defaultValue="USD"

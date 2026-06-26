@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://speedrun-ai-platform.vercel.app/sitemap.xml
