@@ -6,22 +6,22 @@ export function FAQ() {
     {
       id: 1,
       question: "How does the engine isolate component state updates?",
-      answer: "We employ a zero-dependency PubSub architecture combined with direct DOM node references. Updates target raw .textContent values, completely bypassing the parent virtual DOM reconciliation process and ensuring zero global layout reflows."
+      answer: "We employ a zero-dependency PubSub architecture paired with direct DOM node references. Updates target raw textContent values directly, completely bypassing parent virtual DOM reconciliation."
     },
     {
       id: 2,
       question: "Is there a limit to the active bento-node tracking matrix?",
-      answer: "The tracking matrix scales dynamically. Because calculations utilize native CSS variables mapping coordinate boundaries directly to the GPU compositor layer, the node count is constrained only by VRAM limits rather than main-thread JS capacity."
+      answer: "The tracking matrix scales dynamically. Calculations map native CSS variables directly to the GPU compositor layer. Thus, node count is constrained only by VRAM limits, not main-thread JS capacity."
     },
     {
       id: 3,
       question: "Can I deploy the automated pipelines to my own VPC?",
-      answer: "Yes. All orchestration containers are strictly packaged OCI images. You can securely pull and deploy them into your own Kubernetes clusters within private AWS, GCP, or Azure Virtual Private Clouds."
+      answer: "Yes. All orchestration containers are strictly packaged OCI images. Securely pull and deploy them into your own Kubernetes clusters. This works within private AWS, GCP, or Azure Virtual Private Clouds."
     },
     {
       id: 4,
       question: "What SLA guarantees apply to the real-time neural streams?",
-      answer: "Enterprise tier deployments are backed by a 99.99% multi-region uptime SLA. Intelligent traffic routing and predictive container scaling ensure latency remains under 15ms even during unpredictable payload spikes."
+      answer: "Enterprise tier deployments feature a 99.99% multi-region uptime SLA. Intelligent routing and predictive scaling manage traffic. This ensures latency remains under 15ms, even during unpredictable payload spikes."
     }
   ];
 

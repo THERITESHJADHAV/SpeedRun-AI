@@ -17,7 +17,7 @@ export const Hero = () => {
       </h1>
       
       <p className="mt-6 text-lg md:text-xl text-mystic max-w-2xl font-light animate-fade-up-2">
-        The <strong>nextgen</strong> AI-driven <strong>data</strong> <strong>automate</strong> <strong>platform</strong>. Connect pipelines, transform datasets, and deploy intelligent agents with unprecedented <strong>speed</strong>.
+        The <strong>Next-Gen AI Platform</strong>. <strong>Automate</strong> your <strong>data</strong> <strong>flow</strong> with unprecedented <strong>speed</strong>. Connect pipelines, transform datasets, and deploy intelligent agents instantly.
       </p>
 
       <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 animate-fade-up-3">
