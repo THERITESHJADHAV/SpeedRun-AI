@@ -5,25 +5,25 @@ const featuresData = [
   {
     id: 0,
     title: 'Visual Pipeline Builder',
-    description: 'Drag and drop nodes to construct complex data transformations without writing a single line of code.',
+    description: 'How it works: Drag and drop nodes to construct complex data transformations. You never write a single line of code.',
     icon: <ArrowPath className="w-6 h-6" />,
   },
   {
     id: 1,
     title: 'Real-time Analytics',
-    description: 'Monitor throughput, error rates, and latency with millisecond precision.',
+    description: 'Monitor throughput, error rates, and latency instantly. Track metrics with 99.999% precision.',
     icon: <ChartPie className="w-6 h-6" />,
   },
   {
     id: 2,
     title: 'Predictive Scaling',
-    description: 'Our AI anticipates traffic spikes and pre-warms containers so you never drop a payload.',
+    description: 'Why it scales: Our AI anticipates traffic spikes and pre-warms containers. You never drop a payload.',
     icon: <ArrowTrendingUp className="w-6 h-6" />,
   },
   {
     id: 3,
     title: 'Deep Configuration',
-    description: 'Fine-tune memory allocation, concurrency limits, and retry backoffs at the granular node level.',
+    description: 'Fine-tune memory allocation, concurrency limits, and retry backoffs at the node level. Reduce execution overhead by 40% globally.',
     icon: <Cog8Tooth className="w-6 h-6" />,
   }
 ];

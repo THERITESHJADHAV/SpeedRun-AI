@@ -17,7 +17,7 @@ export const Hero = () => {
       </h1>
       
       <p className="mt-6 text-lg md:text-xl text-mystic max-w-2xl font-light animate-fade-up-2">
-        The <strong>Next-Gen AI Platform</strong>. <strong>Automate</strong> your <strong>data</strong> <strong>flow</strong> with unprecedented <strong>speed</strong>. Connect pipelines, transform datasets, and deploy intelligent agents instantly.
+        Experience <strong>Next-Gen AI Platform</strong> SpeedRun: the ultimate AI-driven data automation system. Connect pipelines, transform datasets, and deploy intelligent agents in seconds.
       </p>
 
       <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 animate-fade-up-3">
