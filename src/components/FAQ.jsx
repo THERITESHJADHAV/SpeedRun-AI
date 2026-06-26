@@ -10,12 +10,12 @@ export function FAQ() {
     },
     {
       id: 2,
-      question: "Is there a limit to the active bento-node tracking matrix?",
+      question: "Why is there a limit to the active bento-node tracking matrix?",
       answer: "The tracking matrix scales dynamically. Calculations map native CSS variables directly to the GPU compositor layer. Thus, node count is constrained only by VRAM limits, not main-thread JS capacity."
     },
     {
       id: 3,
-      question: "Can I deploy the automated pipelines to my own VPC?",
+      question: "Where can I deploy the automated pipelines to my own VPC?",
       answer: "Yes. All orchestration containers are strictly packaged OCI images. Securely pull and deploy them into your own Kubernetes clusters. This works within private AWS, GCP, or Azure Virtual Private Clouds."
     },
     {

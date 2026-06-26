@@ -5,19 +5,19 @@ const featuresData = [
   {
     id: 0,
     title: 'Visual Pipeline Builder',
-    description: 'How it works: Drag and drop nodes to construct complex data transformations. You never write a single line of code.',
+    description: 'How it works: Drag and drop nodes to construct complex data transformations. You never write a single line of code. Boosts developer velocity by 300% across workflows.',
     icon: <ArrowPath className="w-6 h-6" />,
   },
   {
     id: 1,
     title: 'Real-time Analytics',
-    description: 'Monitor throughput, error rates, and latency instantly. Track metrics with 99.999% precision.',
+    description: 'Monitor throughput, error rates, and latency instantly. Track metrics with 99.999% precision. Maintains a 0.01ms tracking latency threshold.',
     icon: <ChartPie className="w-6 h-6" />,
   },
   {
     id: 2,
     title: 'Predictive Scaling',
-    description: 'Why it scales: Our AI anticipates traffic spikes and pre-warms containers. You never drop a payload.',
+    description: 'Why it scales: Our AI anticipates traffic spikes and pre-warms containers. You never drop a payload. Pre-warms instances with 99.4% traffic estimation accuracy.',
     icon: <ArrowTrendingUp className="w-6 h-6" />,
   },
   {
