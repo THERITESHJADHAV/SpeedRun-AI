@@ -6,6 +6,8 @@ import { Workspace } from './components/Workspace';
 import { Features } from './components/Features';
 import { Pricing } from './components/Pricing';
 import { Integrations } from './components/Integrations';
+import { Testimonials } from './components/Testimonials';
+import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
         <Features />
         <Pricing />
         <Integrations />
+        <Testimonials />
+        <FAQ />
       </main>
       <Footer />
     </div>

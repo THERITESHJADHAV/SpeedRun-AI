@@ -106,7 +106,7 @@ export const Pricing = () => {
           <div 
             key={tier}
             style={{ transitionDelay: `${index * 150}ms` }}
-            className={`mouse-glow reveal-on-scroll relative rounded-2xl border p-8 flex flex-col justify-between transition-all duration-300 ease-out 
+            className={`mouse-glow reveal-on-scroll relative rounded-2xl border p-8 flex flex-col justify-between transition-all duration-200 ease-out 
               ${index === 1  
                 ? 'bg-nocturnal border-forsythia/50 shadow-[0_0_30px_rgba(255,200,1,0.15)] -translate-y-2' 
                 : 'bg-oceanic border-mystic/20 hover:border-mystic/50 hover:-translate-y-1 hover:shadow-lg'

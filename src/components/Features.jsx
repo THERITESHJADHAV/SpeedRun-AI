@@ -58,7 +58,7 @@ export const Features = () => {
             return (
               <div 
                 key={item.id} 
-                className={`mouse-glow border rounded-xl overflow-hidden transition-colors duration-300 ${isActive ? 'border-forsythia/50 bg-nocturnal/50' : 'border-mystic/20 bg-oceanic'}`}
+                className={`mouse-glow border rounded-xl overflow-hidden transition-colors duration-200 ease-out ${isActive ? 'border-forsythia/50 bg-nocturnal/50' : 'border-mystic/20 bg-oceanic'}`}
                 onMouseMove={(e) => {
                   const rect = e.currentTarget.getBoundingClientRect();
                   const x = e.clientX - rect.left;
@@ -77,7 +77,7 @@ export const Features = () => {
                     </div>
                     <span className="font-bold text-lg text-arctic">{item.title}</span>
                   </div>
-                  <div className={`transform transition-transform duration-300 ${isActive ? 'rotate-180 text-forsythia' : 'text-mystic'}`}>
+                  <div className={`transform transition-transform duration-200 ease-out ${isActive ? 'rotate-180 text-forsythia' : 'text-mystic'}`}>
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -121,7 +121,7 @@ export const Features = () => {
                 >
                 <div className={`absolute -bottom-20 -right-20 w-64 h-64 bg-forsythia rounded-full blur-[100px] transition-opacity duration-500 pointer-events-none ${isActive ? 'opacity-20' : 'opacity-0'}`}></div>
 
-                <div className={`w-14 h-14 shrink-0 rounded-xl flex items-center justify-center transition-colors duration-300 ${isActive ? 'bg-forsythia text-oceanic shadow-lg' : 'bg-nocturnal text-mystic group-hover:text-forsythia'}`}>
+                <div className={`w-14 h-14 shrink-0 rounded-xl flex items-center justify-center transition-colors duration-200 ease-out ${isActive ? 'bg-forsythia text-oceanic shadow-lg' : 'bg-nocturnal text-mystic group-hover:text-forsythia'}`}>
                   {item.icon}
                 </div>
                 
